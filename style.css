@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-style: "Inter";
+
+}
+.headerfull {
+    max-width: 1431px;
+    max-height: 1023px;
+}
+
+nav {
+    
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 100;
+    font-style: "Playfair Display";
+    
+}
+
+header {
+    background-image: url(images/background1.jpg);
+}
+
+.Quality {
+    background-image: url(images/component_2.jpg);
+    color: #FFFFFF;
+    max-width: 2287px;
+    max-height: 853px;
+}
+
+.Why {
+    background-image:  url(images/component_3.png);
+    color: #FFFFFF;
+}
+
+.Where {
+    background-color: #202023;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    background-color: #202023;
+    color: #FFFFFF;
+    max-width: 1440px;
+    max-height: 775px;
+}
+
+.headercook {
+    align-items: center;
+    gap: 80px;
+    display: flex;
+    color: #FFFFFF;
+}
+.headerinfo {
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #202023;
+    color: #FFFFFF;
+}
+
+.American_Cockie {
+    background-color: #272727;
+    max-height: 225px;
+    max-width: 310px;
+    display: flex;
+    margin: 10px;
+}
+.American_Cockie:hover{
+    background-color: #EBAD51;
+}
+
+.Crushed_with_chockolate {
+    background-color: #272727;
+    max-height: 225px;
+    max-width: 310px;
+    display: flex;
+}
+.Crushed_with_chockolate:hover{
+    background-color: #EBAD51;
+}
+
+.Blackberry_pie{
+    background-color: #272727;
+    max-height: 225px;
+    max-width: 310px;
+    display: flex;
+}
+.Blackberry_pie:hover{
+    background-color: #EBAD51;
+}
+.headerbutt {
+    background-color: #C85312;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.text-box {
+    width: 570px;
+}
+
+.shopbutt {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B47B48;
+    color: #FFFFFF;
+    width: 157px;
+    height: 37px;
+    border-radius: 8px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 50;
+    
+}
+
+.order {
+    background-color: #B47B48;
+    border-radius: 8px;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: 550;
+}
+.trad {
+    font-size: 70px;
+    font-weight: 100;
+}
