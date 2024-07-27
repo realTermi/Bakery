@@ -157,6 +157,7 @@ header {
     margin-top: 5px;
     font-size: 16px;
     font-weight: 300;
+    border: none;
 }
 .shopbutt:hover {
     background-color: #C85312;
@@ -495,7 +496,6 @@ footer {
 }
 
 
-
 .About {
     text-align: left;
     width: 162px;
@@ -506,7 +506,6 @@ footer {
     font-weight: 200;
     
 }
-
 
 .About > p {
     padding-bottom: 50px;
@@ -541,4 +540,74 @@ footer {
 .Company > p {
     padding-bottom: 50px;
     
+}
+
+.modal {
+    background-image: url(/images/modal-img.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-size: 507px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    max-width: 990px;
+    max-height: 669px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    padding-top: 94px;
+    padding-left: 87px;
+    padding-bottom: 94px;
+    padding-right: 495px;
+}
+
+.modal h3 {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.modal input {
+    display: block;
+    font-size: 24px;
+    width: 412px;
+    font-weight: 100;
+    border: none;
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 22px 16px;
+
+}
+
+.modal input:nth-child(1) {
+    margin-bottom: 71px;
+}
+
+.modal input:nth-child(2) {
+    margin-bottom: 54px;
+}
+
+.modal .shopbutt {
+    margin: 0;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

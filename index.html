@@ -27,7 +27,21 @@
                     ARTISAX BAKERY</h1>
                 <p class="text-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-                <button class="shopbutt">SHOP NOW</button>
+                <button class="shopbutt" data-modal-open>SHOP NOW</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <div>
+                            <h3>TRADITIONAL ARTISAX BAKERY</h3>
+                            <form>
+                                <input placeholder="Your adress" type="text" pattern="^[А-Яа-яЇїІіЄєҐґ'’\s]+, [А-Яа-яЇїІіЄєҐґ'’\s]+, \d+$"
+
+                                title="Введіть адресу у форматі - Київ, Хрещатик, 11" required minlength="3">
+                                <input placeholder="Your card" type="text" pattern="^\d{16}$" title="Введіть число з 16 чисел" required>
+                                <button class="shopbutt" type="submit" >SHOP NOW</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="headercook">
                 <div class="American_Cockie">
@@ -198,5 +212,22 @@
 
         <p class="foo">@2022 Eatly.All right riserved.</p>
     </footer>
+    <script>
+        (() => {
+            const refs = {
+                openModalBtn: document.querySelector("[data-modal-open]"),
+                closeModalBtn: document.querySelector("[data-modal-close]"),
+                modal: document.querySelector("[data-modal]"),
+            };
+
+            refs.openModalBtn.addEventListener("click", toggleModal);
+            refs.closeModalBtn.addEventListener("click", toggleModal);
+
+            function toggleModal() {
+                refs.modal.classList.toggle("is-hidden");
+                document.body.classList.toggle("no-scroll");
+            }
+        })();
+    </script>
 </body>
 </html>
